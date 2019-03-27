@@ -1,6 +1,7 @@
 # the below content will guide how to automatically pull image from docker private regisery to kubenrtes
 INTRODUCTION
-One of the most secure ways to run a Kubernetes cluster is to avoid using images that have not been vetted for use in your infrastructure by you personally or by trusted members of your team. The best way to do this is by using a private Docker repository. In this way, you know that the image you’re using is the same one you pushed.
+One of the most secure ways to run a Kubernetes cluster is to avoid using images that have not been vetted for use in your infrastructure by you personally or by trusted members of your team. 
+The best way to do this is by using a private Docker repository. In this way, you know that the image you’re using is the same one you pushed.
 GETTING STARTED
 You’re going to need some information about the repo in order to configure your cluster to access it. Start by logging in to your repo using
 docker login
