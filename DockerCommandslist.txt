@@ -1,0 +1,12 @@
+# to setup registery
+docker run -d -p 5000:5000 --name registry registry:latest
+# docker tag command
+docker image tag my-image localhost:5000/my-image
+# push to docker registery
+docker push localhost:5000/my-image
+docker pull 
+
+#Toview imges at regitery
+
+curl -X GET http://localhost:5000/v2/_catalog
+{"repositories":["my-image"]}
