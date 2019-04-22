@@ -1,0 +1,24 @@
+# the commands to install docker are same for both redhat and ubuntu OS.
+
+Step1: Epel-release must released
+To check that [root@redhat-docer ~]# cat /etc/issue
+\S
+Kernel \r on an \m
+
+note: If it will the above output then Epel was released
+
+Stpe2: yum install docker -y
+Stpe3: systemctl restart docker.service -y
+Notel: If you do not restrat docker then it will the below error
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+"To slove that we have to restart docker service"
+ 
+Notes: before docker service restart then " docker info" at that time also the above error will come.
+
+Finall Notes: to check docker installed and proper working state
+then type the commands
+
+docker -v
+docker info
+
